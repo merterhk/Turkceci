@@ -1,0 +1,39 @@
+package Otomatalar;
+
+/**
+ *
+ * @author merter
+ */
+public class tablo1 {
+    /*
+    1–(y)Um
+    2–sUn
+    3–(y)Uz
+    4–sUnUz
+    5–lAr
+    6–m
+    7–n
+    8–k
+    9–nUz
+    10–DUr
+    11–cAsInA
+    12–(y)DU
+    13–(y)sA
+    14–(y)mUş
+    15–(y)ken
+     */
+
+    String regex = // <editor-fold defaultstate="collapsed" desc="regex">
+            "(14x)?(1x|2x|3x|4x)"
+            + "|"
+            + "(10x|12x|13x|14x)?(5x)"
+            + "|"
+            + "(12x|13x|14x|15x)"
+            + "|"
+            + "(12x|13x)(6x|7x|8x|9x)"
+            + "|"
+            + "(14x(1x|2x|3x|4x|5x)?)?(10x)"
+            + "|"
+            + "(14x(1x|2x|3x|4x|5x)?)?(11x)" // </editor-fold>
+            ;
+}

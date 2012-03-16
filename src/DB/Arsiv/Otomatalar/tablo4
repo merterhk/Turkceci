@@ -1,0 +1,61 @@
+/* Sayılar TBD Gülşen Cebiroğlunun makalesindeki eklere karşılık gelmektedir. */
+package Otomatalar;
+
+/**
+ *
+ * @author merter
+1x–(y)Um
+2x–sUn
+3x–(y)Uz
+4x–sUnUz
+5x–lAr
+6x–mUş
+7x–(y)AcAk
+8x–(U)r
+9x–Ar
+10x–(U)yor
+11x–mAktA
+12x–mAlI
+13x–m
+14x–n
+15x–k
+16x–nUz
+17x–DU
+18x–sA
+19x–lIm
+20x–(y)A
+21x–(y)UnUz
+22x–(y)Un
+23x–sUnlAr
+24x–DUr
+25x–(y)DU
+26x–(y)sA
+27x–(y)mUş
+28x–cAsInA
+29x–(y)ken
+
+ */
+public class tablo4 {
+
+    String regex = "((6x|7x|8x|9x|10x|11x|12x|17x|18x|20x)?(27x)|(6x|7x|8x|9x|10x|11x|12x))3x"
+            + "|"
+            + "((6x|7x|8x|9x|10x|11x|12x|17x|18x|20x)?(27x)|(6x|7x|8x|9x|10x|11x|12x|20x))?2x"
+            + "|"
+            + "(27x|(6x|7x|8x|9x|10x|11x|12x|20x))(1x|4x)"
+            + "|"
+            + "((17x|18x)|(25x|26x))(13x|14x|15x|16x)"
+            + "|"
+            + "((6x|7x|8x|9x|10x|11x|12x|17x|18x|20x)|(25x|26x|27x))5x"
+            + "|"
+            + "20x|19x"
+            + "|"
+            + "(6x|7x|8x|9x|10x|11x|12x|17x|18x|20x|21x|22x|23x)
+            + "|"
+            + "((6x|7x|8x|9x|10x|11x|12x)|((((6x|7x|8x|9x|10x|11x|12x)?5x)|(6x|7x|8x|9x|10x|11x|12x|17x|18x|20x))?27x)|(((6x|7x|8x|9x|10x|11x|12x)5x)))28x"
+            + "|"
+            + "((6x|7x|8x|9x|10x|11x|12x)|(6x|7x|8x|9x|10x|11x|12x)5x)29x"
+            + "|"
+            + "((6x|7x|8x|9x|10x|11x|12x|17x|18x|20x)|((6x|7x|8x|9x|10x|11x|12x)?5x))?(25x|26x|27x)"
+            + "|"
+            + "((6x|7x|8x|9x|10x|11x|12x)|(6x|7x|8x|9x|10x|11x|12x)(1x2x3x4x5x))24x";
+}

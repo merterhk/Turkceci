@@ -1,0 +1,175 @@
+    public void calis() {
+        String kelime = "gelseydiniz"; // kök + f->i + çoğul + durum
+        String kok = kelime;
+        boolean fiil = false;
+        boolean isim = false;
+        boolean fiilKok = false;
+        boolean isimKok = false;
+        Pattern pat = Pattern.compile("(.*?)$");
+
+        Matcher m;
+        // Yiğidim
+        Stack stack = new Stack();
+        Stack denenmis = new Stack();
+        String denenen = "";
+        while (true) {
+            System.out.println(kelime);
+            if (!denenmis.isEmpty()) {
+                denenen = "" + denenmis.pop();
+            } else {
+                denenen = "";
+            }
+
+
+            m = cogul.matcher(kelime);
+            if (!fiil && m.matches()) {
+                if (!denenen.equals(m.group(2))) {
+                    System.out.println("Çoğul eki " + m.group(2));
+                    isim = true;
+                    fiil = false;
+                    stack.push(m.group(2));
+                    kelime = m.group(1);
+                    continue;
+                }
+            }
+
+            m = durum.matcher(kelime);
+            if (!fiil && m.matches()) {
+                if (!denenen.equals(m.group(2))) {
+                    System.out.println("isim Durum eki " + m.group(2));
+                    isim = true;
+                    fiil = false;
+                    stack.push(m.group(2));
+                    kelime = m.group(1);
+                    continue;
+                }
+            }
+
+            m = tamlanan.matcher(kelime);
+            if (!fiil && m.matches()) {
+                if (!denenen.equals(m.group(2))) {
+                    System.out.println("tamlanan eki " + m.group(2));
+                    isim = true;
+                    fiil = false;
+                    stack.push(m.group(2));
+                    kelime = m.group(1);
+                    continue;
+                }
+            }
+
+            m = tamlayan.matcher(kelime);
+            if (!fiil && m.matches()) {
+                if (!denenen.equals(m.group(2))) {
+                    System.out.println("tamlayan eki " + m.group(2));
+                    isim = true;
+                    fiil = false;
+                    stack.push(m.group(2));
+                    kelime = m.group(1);
+                    continue;
+                }
+            }
+
+            m = kisi.matcher(kelime);
+            if (fiil && m.matches()) {
+                if (!denenen.equals(m.group(2))) {
+                    System.out.println("kisi cekim eki " + m.group(2));
+                    stack.push(m.group(2));
+                    kelime = m.group(1);
+                    continue;
+                }
+            }
+
+            m = kip.matcher(kelime);
+            if (fiil && m.matches()) {
+                if (!denenen.equals(m.group(2))) {
+                    System.out.println("kip zaman cekim " + m.group(2));
+                    stack.push(m.group(2));
+                    kelime = m.group(1);
+                    continue;
+                }
+            }
+
+            m = isimdenIsime.matcher(kelime);
+            if (m.matches()) {
+                if (!denenen.equals(m.group(2))) {
+                    System.out.println("isimden isim " + m.group(2));
+                    stack.push(m.group(2));
+                    kelime = m.group(1);
+                    fiil = false;
+                    isim = true;
+                    continue;
+                }
+            }
+
+            m = isimdenFiile.matcher(kelime);
+            if (m.matches()) {
+                if (!denenen.equals(m.group(2))) {
+                    System.out.println("isimden fiil " + m.group(2));
+                    stack.push(m.group(2));
+                    kelime = m.group(1);
+                    fiil = false;
+                    isim = true;
+                    continue;
+                }
+            }
+
+            m = fiildenIsime.matcher(kelime);
+            if (m.matches()) {
+                if (!denenen.equals(m.group(2))) {
+                    System.out.println("fiilden isim " + m.group(2));
+                    stack.push(m.group(2));
+                    kelime = m.group(1);
+                    fiil = true;
+                    isim = false;
+                    continue;
+                }
+            }
+
+            m = fiildenFiile.matcher(kelime);
+            if (m.matches()) {
+                if (!denenen.equals(m.group(2))) {
+                    System.out.println("fiilden fiil " + m.group(2));
+                    stack.push(m.group(2));
+                    kelime = m.group(1);
+                    fiil = true;
+                    isim = false;
+                    continue;
+                }
+            }
+
+//            System.out.println(kelime);
+            if (!stack.isEmpty()) {
+                String sonEk = (String) stack.pop();
+                denenmis.push(sonEk);
+                kelime = kelime + sonEk;
+                continue;
+            }
+
+            break;
+        }
+        // <editor-fold defaultstate="collapsed" desc="Hebele Hübele">
+//         //fiil kontrol
+//        boolean fiilMi = false;
+//        String fiilKok = "";
+//        Pattern pF = Pattern.compile("(.+?)((" + isimdenFiil + ")?(" + fiildenFiil + ")*(" + kipZamanCekimEki + ")?(" + kisiCekimEki + ")?)?$");
+//        Matcher mF = pF.matcher(kelime);
+//        if (mF.matches()) {
+//            fiilMi = true;
+//            System.out.println("Kök : " + mF.group(1));
+//            System.out.println("Ek : " + mF.group(2));
+//        }
+//        System.out.println("Fiil mi?=" + fiilMi);
+//        System.out.println("--------------------");
+//
+//        // isim kontrol
+//        boolean isimMi = false;
+//        Pattern pI = Pattern.compile("(.+?)((" + isimdenIsim + ")?(" + cogulCekimEki + ")?((" + tamlananCekimEki + ")|(" + tamlayanCekimEki + "))?(" + isimDurumCekimEki + ")?)$");
+//        Matcher mI = pI.matcher(kelime);
+//        if (mI.matches()) {
+//            isimMi = true;
+//            System.out.println("Kök : " + mF.group(1));
+//            System.out.println("Ek : " + mI.group(2));
+//        }
+//        System.out.println("isim mi?=" + isimMi);
+        // </editor-fold>
+    }

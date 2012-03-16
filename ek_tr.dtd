@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/ek_tr.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE ek-bilgisi SYSTEM "ek_tr.dtd">
+
+    <ek-bilgisi>
+    ...
+    </ek-bilgisi>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT ek-bilgisi (ekler|ek-kumeleri)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT ek-kumeleri (ek-kumesi)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT ek-kumesi (ek)*>
+<!ATTLIST ek-kumesi
+    ad CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT ek (#PCDATA|ozel-durum|ozellik|oncelikli-ekler|ardisil-ekler)*>
+<!ATTLIST ek
+    kis CDATA #IMPLIED
+    k_en CDATA #IMPLIED
+    uretim CDATA #IMPLIED
+    ad CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT ekler (ek)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT ardisil-ekler (aek|kume)*>
+<!ATTLIST ardisil-ekler
+    kopya-ek CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT kume (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT aek (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT oncelikli-ekler (oek)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT oek (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT ozellik (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT ozel-durum (on-ek)*>
+<!ATTLIST ozel-durum
+    uretim CDATA #IMPLIED
+    ad CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT on-ek (#PCDATA)>

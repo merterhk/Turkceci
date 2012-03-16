@@ -1,0 +1,336 @@
+  public void initCekimEkleri() {
+        //hal,iyelik,ilgi,çokluk,mi,ekfiil,tamlama
+
+        // Çoğul Ekler
+        cekimEkleri.put("ler", "");
+        cekimEkleri.put("lar", "");
+
+        // Hal ekleri :-ı-i-u-ü yönelme hali:-a-e bulunma hali:-da-de-ta-te ayrılma hali:dan-den-tan-ten ilgihali:ın-in-un-ün
+        cekimEkleri.put("ı", "");
+        cekimEkleri.put("i", "");
+        cekimEkleri.put("u", "");
+        cekimEkleri.put("ü", "");
+        cekimEkleri.put("a", "");
+        cekimEkleri.put("e", "");
+        cekimEkleri.put("de", "");
+        cekimEkleri.put("da", "");
+        cekimEkleri.put("ta", "");
+        cekimEkleri.put("te", "");
+        cekimEkleri.put("den", "");
+        cekimEkleri.put("dan", "");
+        cekimEkleri.put("tan", "");
+        cekimEkleri.put("ten", "");
+        cekimEkleri.put("ın", "");
+        cekimEkleri.put("in", "");
+        cekimEkleri.put("un", "");
+        cekimEkleri.put("ün", "");
+
+        // İyelik ekleri
+        cekimEkleri.put("ım", "");//ben
+        cekimEkleri.put("im", "");
+        cekimEkleri.put("um", "");
+        cekimEkleri.put("üm", "");
+        cekimEkleri.put("ı", "");//o
+        cekimEkleri.put("i", "");
+        cekimEkleri.put("u", "");
+        cekimEkleri.put("ü", "");
+        cekimEkleri.put("ın", "");//sen
+        cekimEkleri.put("in", "");
+        cekimEkleri.put("un", "");
+        cekimEkleri.put("ün", "");
+        cekimEkleri.put("ımız", "");//biz
+        cekimEkleri.put("imiz", "");
+        cekimEkleri.put("umuz", "");
+        cekimEkleri.put("ümüz", "");
+        cekimEkleri.put("ları", "");//onlar
+        cekimEkleri.put("leri", "");
+        cekimEkleri.put("ınız", "");//siz
+        cekimEkleri.put("iniz", "");
+        cekimEkleri.put("unuz", "");
+        cekimEkleri.put("ünüz", "");
+
+        // soru ekleri
+
+//        cekimEkleri.put(" mı", "");
+//        cekimEkleri.put(" mu", "");
+//        cekimEkleri.put(" mi", "");
+//        cekimEkleri.put(" mü", "");
+
+        // ilgi ekleri : ın, in, un, ün
+        cekimEkleri.put("ın", "");
+        cekimEkleri.put("in", "");
+        cekimEkleri.put("un", "");
+        cekimEkleri.put("ün", "");
+
+        // eşitlik ekleri : -ca,--ce
+        cekimEkleri.put("ca", "");
+        cekimEkleri.put("ce", "");
+
+
+        // olumsuzluk ekleri
+        cekimEkleri.put("ma", "");
+        cekimEkleri.put("me", "");
+
+        // ilgi zamiri
+        cekimEkleri.put("ki", "");
+
+        // kaynaştırma ekleri
+        cekimEkleri.put("y", "");
+        cekimEkleri.put("ş", "");
+        cekimEkleri.put("s", "");
+        cekimEkleri.put("n", "");
+
+
+        // ek-eylem ekleri (Gulsen TBD Makale Alıntı)
+        cekimEkleri.put("ım", "");
+        cekimEkleri.put("im", "");
+        cekimEkleri.put("um", "");
+        cekimEkleri.put("üm", "");
+        cekimEkleri.put("sın", "");
+        cekimEkleri.put("sin", "");
+        cekimEkleri.put("sun", "");
+        cekimEkleri.put("sün", "");
+        cekimEkleri.put("ız", "");
+        cekimEkleri.put("iz", "");
+        cekimEkleri.put("uz", "");
+        cekimEkleri.put("üz", "");
+        cekimEkleri.put("sınız", "");
+        cekimEkleri.put("siniz", "");
+        cekimEkleri.put("sunuz", "");
+        cekimEkleri.put("sünüz", "");
+        cekimEkleri.put("m", "");
+        cekimEkleri.put("n", "");
+        cekimEkleri.put("k", "");
+        cekimEkleri.put("ğ", "");//ğ
+        cekimEkleri.put("nız", "");
+        cekimEkleri.put("niz", "");
+        cekimEkleri.put("nuz", "");
+        cekimEkleri.put("nüz", "");
+        cekimEkleri.put("dır", "");
+        cekimEkleri.put("dir", "");
+        cekimEkleri.put("dur", "");
+        cekimEkleri.put("dür", "");
+        cekimEkleri.put("tır", "");
+        cekimEkleri.put("tir", "");
+        cekimEkleri.put("tur", "");
+        cekimEkleri.put("tür", "");
+        cekimEkleri.put("casına", "");
+        cekimEkleri.put("cesine", "");
+        cekimEkleri.put("dı", "");
+        cekimEkleri.put("di", "");
+        cekimEkleri.put("du", "");
+        cekimEkleri.put("dü", "");
+        cekimEkleri.put("tı", "");
+        cekimEkleri.put("ti", "");
+        cekimEkleri.put("tu", "");
+        cekimEkleri.put("tü", "");
+        cekimEkleri.put("tü", "");
+        cekimEkleri.put("sa", "");
+        cekimEkleri.put("se", "");
+        cekimEkleri.put("mış", "");
+        cekimEkleri.put("miş", "");
+        cekimEkleri.put("muş", "");
+        cekimEkleri.put("müş", "");
+        cekimEkleri.put("ken", "");
+
+
+
+        // Fiil çekim ekleri
+        cekimEkleri.put("m", "");
+        cekimEkleri.put("zsın", "");
+        cekimEkleri.put("zsin", "");
+        cekimEkleri.put("z", "");
+        cekimEkleri.put("yız", "");
+        cekimEkleri.put("yiz", "");
+        cekimEkleri.put("zsınız", "");
+        cekimEkleri.put("zsiniz", "");
+        cekimEkleri.put("zlar", "");
+        cekimEkleri.put("ma", "");
+        cekimEkleri.put("me", "");
+        cekimEkleri.put("ama", "");
+        cekimEkleri.put("eme", "");
+        cekimEkleri.put("edur", "");
+        cekimEkleri.put("adur", "");
+        cekimEkleri.put("ıver", "");
+        cekimEkleri.put("iver", "");
+        cekimEkleri.put("uver", "");
+        cekimEkleri.put("üver", "");
+        cekimEkleri.put("agel", "");
+        cekimEkleri.put("egel", "");
+        cekimEkleri.put("egör", "");
+        cekimEkleri.put("agör", "");
+        cekimEkleri.put("abil", "");
+        cekimEkleri.put("ebil", "");
+        cekimEkleri.put("eyaz", "");
+        cekimEkleri.put("ayaz", "");
+        cekimEkleri.put("akoy", "");
+        cekimEkleri.put("ekoy", "");
+        cekimEkleri.put("mak", "");
+        cekimEkleri.put("mek", "");
+        cekimEkleri.put("mağ", "");//ğ
+        cekimEkleri.put("meğ", "");//ğ
+        cekimEkleri.put("ıcı", "");
+        cekimEkleri.put("ici", "");
+        cekimEkleri.put("ucu", "");
+        cekimEkleri.put("ücü", "");
+        cekimEkleri.put("ıp", "");
+        cekimEkleri.put("ip", "");
+        cekimEkleri.put("up", "");
+        cekimEkleri.put("üp", "");
+        cekimEkleri.put("alı", "");
+        cekimEkleri.put("eli", "");
+        cekimEkleri.put("dıkça", "");
+        cekimEkleri.put("tıkça", "");
+        cekimEkleri.put("dikçe", "");
+        cekimEkleri.put("tikçe", "");
+        cekimEkleri.put("dukça", "");
+        cekimEkleri.put("tukça", "");
+        cekimEkleri.put("dükçe", "");
+        cekimEkleri.put("tükçe", "");
+        cekimEkleri.put("arak", "");
+        cekimEkleri.put("erek", "");
+        cekimEkleri.put("arağ", "");//ğ
+        cekimEkleri.put("ereğ", "");//ğ
+        cekimEkleri.put("ınca", "");
+        cekimEkleri.put("ince", "");
+        cekimEkleri.put("unca", "");
+        cekimEkleri.put("ünce", "");
+        cekimEkleri.put("dan", "");
+        cekimEkleri.put("den", "");
+        cekimEkleri.put("tan", "");
+        cekimEkleri.put("ten", "");
+        cekimEkleri.put("ya", "");
+        cekimEkleri.put("ye", "");
+        cekimEkleri.put("an", "");
+        cekimEkleri.put("en", "");
+        cekimEkleri.put("acak", "");
+        cekimEkleri.put("ecek", "");
+        cekimEkleri.put("acağ", "");//ğ
+        cekimEkleri.put("eceğ", "");//ğ
+        cekimEkleri.put("ası", "");
+        cekimEkleri.put("esi", "");
+        cekimEkleri.put("dık", "");
+        cekimEkleri.put("tık", "");
+        cekimEkleri.put("dik", "");
+        cekimEkleri.put("tik", "");
+        cekimEkleri.put("duk", "");
+        cekimEkleri.put("dük", "");
+        cekimEkleri.put("tuk", "");
+        cekimEkleri.put("tük", "");
+
+        cekimEkleri.put("dığ", "");//ğ
+        cekimEkleri.put("tığ", "");//ğ
+        cekimEkleri.put("diğ", "");//ğ
+        cekimEkleri.put("tiğ", "");//ğ
+        cekimEkleri.put("duğ", "");//ğ
+        cekimEkleri.put("düğ", "");//ğ
+        cekimEkleri.put("tuğ", "");//ğ
+        cekimEkleri.put("tüğ", "");//ğ
+
+        cekimEkleri.put("mış", "");
+        cekimEkleri.put("miş", "");
+        cekimEkleri.put("muş", "");
+        cekimEkleri.put("müş", "");
+        cekimEkleri.put("mazlık", "");
+        cekimEkleri.put("mezlik", "");
+        cekimEkleri.put("mazlığ", "");//ğ
+        cekimEkleri.put("mezliğ", "");//ğ
+        cekimEkleri.put("ma", "");
+        cekimEkleri.put("me", "");
+        cekimEkleri.put("ış", "");
+        cekimEkleri.put("iş", "");
+        cekimEkleri.put("uş", "");
+        cekimEkleri.put("üş", "");
+        cekimEkleri.put("dan", "");
+        cekimEkleri.put("tan", "");
+        cekimEkleri.put("la", "");
+        cekimEkleri.put("le", "");
+        cekimEkleri.put("maksızın", "");
+        cekimEkleri.put("meksizin", "");
+        cekimEkleri.put("madan", "");
+        cekimEkleri.put("meden", "");
+        cekimEkleri.put("dur", "");
+        cekimEkleri.put("tur", "");
+        cekimEkleri.put("t", "");
+
+        // eylem zaman ekleri
+        cekimEkleri.put("r", "");
+        cekimEkleri.put("ar", "");
+        cekimEkleri.put("er", "");
+
+// YAPIM EKLERİ
+        cekimEkleri.put("lık", "");
+        cekimEkleri.put("lik", "");
+        cekimEkleri.put("luk", "");
+        cekimEkleri.put("lük", "");
+        cekimEkleri.put("lığ", "");//ğ
+        cekimEkleri.put("liğ", "");//ğ
+        cekimEkleri.put("luğ", "");//ğ
+        cekimEkleri.put("lüğ", "");//ğ
+        cekimEkleri.put("cı", "");
+        cekimEkleri.put("ci", "");
+        cekimEkleri.put("cu", "");
+        cekimEkleri.put("cü", "");
+        cekimEkleri.put("çı", "");
+        cekimEkleri.put("çi", "");
+        cekimEkleri.put("çu", "");
+        cekimEkleri.put("çü", "");
+        cekimEkleri.put("cık", "");
+        cekimEkleri.put("cik", "");
+        cekimEkleri.put("cuk", "");
+        cekimEkleri.put("cük", "");
+        cekimEkleri.put("çık", "");
+        cekimEkleri.put("çik", "");
+        cekimEkleri.put("çuk", "");
+        cekimEkleri.put("çük", "");
+        cekimEkleri.put("cığ", "");//ğ
+        cekimEkleri.put("ciğ", "");//ğ
+        cekimEkleri.put("cuğ", "");//ğ
+        cekimEkleri.put("cüğ", "");//ğ
+        cekimEkleri.put("çığ", "");//ğ
+        cekimEkleri.put("çiğ", "");//ğ
+        cekimEkleri.put("çuğ", "");//ğ
+        cekimEkleri.put("çüğ", "");//ğ
+        cekimEkleri.put("lağ", "");//ğ
+        cekimEkleri.put("leş", "");
+        cekimEkleri.put("la", "");
+        cekimEkleri.put("le", "");
+        cekimEkleri.put("lı", "");
+        cekimEkleri.put("li", "");
+        cekimEkleri.put("lan", "");
+        cekimEkleri.put("len", "");
+        cekimEkleri.put("ça", "");
+        cekimEkleri.put("çe", "");
+        cekimEkleri.put("ca", "");
+        cekimEkleri.put("ce", "");
+
+
+
+        /*
+
+        –lU
+        –sUz
+         */
+
+//        // sonradan eklenenler
+//        cekimEkleri.put("cı", "");
+//        cekimEkleri.put("si", "");
+//        cekimEkleri.put("cek", "");
+//        cekimEkleri.put("bil", "");
+//        cekimEkleri.put("laş", "");
+//        cekimEkleri.put("ır", "");
+//        cekimEkleri.put("ir", "");
+//        cekimEkleri.put("siz", "");
+//        cekimEkleri.put("ril", "");
+
+//        cekimEkleri.put("ı", "");
+//        cekimEkleri.put("i", "");
+//        cekimEkleri.put("u", "");
+//        cekimEkleri.put("ü", "");
+//        cekimEkleri.put("a", "");
+//        cekimEkleri.put("e", "");
+//        cekimEkleri.put("l", "");
+//        cekimEkleri.put("yor", "");
+
+        System.out.println(cekimEkleri.size() + " ek atandı...");
+    }
